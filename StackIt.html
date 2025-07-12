@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>StackIt - Q&A Forum</title>
+  <link rel="stylesheet" href="stackIt.css" />
+</head>
+<body>
+  <nav>
+    <h1>StackIt</h1>
+    <button onclick="showAskForm()">Ask Question</button>
+  </nav>
+
+  <main id="main-content">
+    <div id="question-list" class="page"></div>
+    <div id="ask-form" class="page hidden">
+      <h2>Ask a Question</h2>
+      <input type="text" id="title" placeholder="Question Title" />
+      <textarea id="description" placeholder="Describe your problem..."></textarea>
+      <input type="text" id="tags" placeholder="Tags (comma separated)" />
+      <button onclick="submitQuestion()">Submit</button>
+    </div>
+    <div id="question-detail" class="page hidden"></div>
+  </main>
+
+  <script src="StackIt.js"></script>
+</body>
+</html>
